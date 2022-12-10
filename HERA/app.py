@@ -13,8 +13,8 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 #Configuracion de email
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
-app.config["MAIL_USERNAME"] = 'herabpmdatos@gmail.com'
-app.config["MAIL_PASSWORD"] = 'sumjkajlqlgmmrtu'
+app.config["MAIL_USERNAME"] = 'example@gmail.com'
+app.config["MAIL_PASSWORD"] = 'password'
 app.config["MAIL_USE_TLS"] = False
 app.config["MAIL_USE_SSL"] = True
 
