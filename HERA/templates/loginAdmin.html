@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="static/CSS/layout_login.css">
+		<title>login Admin</title>
+	</head>
+	<body>
+		<div class= "divlog">
+		<h1>Administrador</h1>
+		<form action="/loginAdmin" method="post">
+			<div class="divlog2">
+				<label for="usuario">Nombre de usuario</label>
+				<input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+			</div>
+
+			<div class= "divlog2">
+				<label for="clave">Contraseña</label>
+				<input type="password" name="clave" id="clave" placeholder="Contraseña">
+			</div>
+
+			<div class= "boton1">
+				<button id= "submit" type="submit">Iniciar sesión</button>
+			</div>
+		</form>
+	</body>
+</html>

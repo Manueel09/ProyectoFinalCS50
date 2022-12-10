@@ -1,0 +1,97 @@
+
+.principal{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.div1{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.contenido{
+    margin-left: 30px;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    user-select: none;
+
+}
+
+.numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+}
+
+.numero h2{
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.texto {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgba(12,149,177,0.2);
+}
+
+.texto p{
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 550;
+    font-family: 'Monaco', monospace;
+
+}
+
+.divi{
+    display:flex;
+    gap: 30px;
+    margin-bottom: 200px;
+
+}
+
+.imagen{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width:500px;
+    height:auto;
+    border-radius: 15px;
+}
+
+.indicaciones{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,126,152,0.7);
+    border-radius: 30px;
+}
+
+.indicaciones h3{
+    margin-top: 8px;
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}

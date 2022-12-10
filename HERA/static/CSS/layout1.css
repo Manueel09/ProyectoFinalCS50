@@ -1,0 +1,47 @@
+.info {
+    margin: 80px;
+    margin-right: 350px;
+    margin-left: 350px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(0, 10, 250 , 0.19);
+  }
+.texto {
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.titulo1{
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: 35px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+
+.logop{
+    display:block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0 0 0.75rem #1cb2b1);
+    transition: all 0.3s
+}
+
+.logop:hover{
+    transform: scale(1.1);
+}
+
+#l_nombre{
+    margin-top: 1px;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 60px;
+    color: #1cb2b1;
+    filter: drop-shadow(0 0 0.75rem #1cb2b1);
+}
+

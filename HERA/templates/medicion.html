@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block titulo%}Medicion{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" type = "text/css" href="static/CSS/medicion.css">
+{% endblock %}
+
+{% block body %}
+    <form action="/medicion" method = "POST">
+        <main class="principal">
+            <div class="titulo">
+                <h1>SU MEDICIÓN ES:</h1>
+            </div>
+            <div class="divi">
+                <section>
+                    <div class="contenido">
+                        <div class="BPM">
+                            <div>
+                                <h3>{{ promedio }}</h3>
+                                <p>BPM</p>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="static/image/dark_heart.svg">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="contenido">
+                <div class="volver">
+                    <h4><a href="\medicion">Pulse aquí para obtener una nueva medición</a></h4>
+                </div>
+            </div>
+        </main>
+    </form>
+{% endblock %}

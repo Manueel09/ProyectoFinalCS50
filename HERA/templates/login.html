@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="static/CSS/layout_login.css">
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<title>login</title>
+	</head>
+	<body>
+		<div class= "divlog">
+		<h1>INGRESA</h1>
+		<form action="/login" method="post">
+			<div class="divlog2">
+				<label for="usuario">Nombre de usuario</label>
+				<input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+			</div>
+
+			<div class= "divlog2">
+				<label for="clave">Contraseña</label>
+				<input type="password" name="clave" id="clave" placeholder="Contraseña">
+			</div>
+
+			<div class= "boton1">
+				<button id= "submit" type="submit">Iniciar sesión</button>
+				<div id="registro">
+					<p>¿No tienes cuenta? <a class="reg" href="/registro">Registrate</a></p>
+				</div>
+			</div>
+		</form>
+		{% if success %}
+		<script>
+			Swal.fire({
+				"title": "{{success}}",
+				"icon": "success"
+			})
+		</script>
+		{% endif %}
+		{% if alert %}
+		<script>
+			Swal.fire({
+				"title": "{{alert}}",
+				"icon": "error"
+			})
+		</script>
+		{% endif %}
+	</body>
+</html>

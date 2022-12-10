@@ -1,0 +1,26 @@
+{% extends "panelAdmin.html" %}
+
+{% block titulo%}Historial de Datos{% endblock %}
+    
+{% block body %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">NOMBRE COMPLETO</th>
+            <th scope="col">EDAD</th>
+            <th scope="col">BPM</th>
+            <th scope="col">FECHA</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in datos %}
+        <tr>
+            <td>{{ i["NombreCompleto"] }}</td>
+            <td>{{ i["Edad"] }}</td>
+            <td>{{ i["Bpm"] }}</td>
+            <td>{{ i["Fecha"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

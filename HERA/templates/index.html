@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block titulo%}Inicio{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="static/CSS/layout1.css">
+{% endblock %}
+
+{% block body %}
+    <form action="/index" method = "POST">
+        <div>
+                <a href="\medicion">
+                    <img class ="logop" src="static/image/frecuencia-cardiaca.png" alt="Logo del Proyecto">
+                </a>
+            <p id="l_nombre">HERA</p>
+        </div>
+        <div class="info">
+            <h2 class="titulo1">Frecuencia Cardíaca</h2>
+            <p class="texto">Es el número de contracciones del corazón o de pulsaciones​ por unidad de tiempo. Se mide en condiciones bien determinadas y se expresa en pulsaciones por minuto a nivel de las arterias periféricas y en latidos por minuto a nivel del corazón.</p>
+        </div>
+</form>
+{% endblock %}
